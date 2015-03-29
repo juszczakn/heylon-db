@@ -7,5 +7,6 @@ touch table_creation.sql
 # concat in order to table script
 cat user.sql\
     parcel.sql\
+    race.sql\
     kingdom.sql\
     units.sql >> table_creation.sql

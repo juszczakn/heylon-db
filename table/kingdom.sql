@@ -1,8 +1,11 @@
+
 --kingdom.sql
+
 create table if not exists kingdom (
        kingdomId serial primary key,
        userId integer references users(userId),
-       name varchar(30) not null
+       name varchar(30) not null,
+       raceId integer references races(raceId)
 );
 
 create table if not exists village (
