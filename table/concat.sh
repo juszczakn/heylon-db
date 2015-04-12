@@ -9,4 +9,6 @@ cat user.sql\
     parcel.sql\
     race.sql\
     kingdom.sql\
-    units.sql >> table_creation.sql
+    units.sql\
+    actions.sql\
+    >> table_creation.sql
