@@ -10,6 +10,7 @@ create table if not exists kingdom (
 
 create table if not exists village (
        villageId serial primary key,
+       name varchar(30),
        parcelId integer references parcel(parcelId),
        kingdomId integer references kingdom(kingdomId)
 );
