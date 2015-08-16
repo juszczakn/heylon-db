@@ -4,7 +4,7 @@ create table if not exists unit_group (
        villageId integer
 );
 
-create table unit_types (
+create table if not exists unit_types (
        typeid integer primary key,
        typename varchar(50) not null
        -- more data on type? health, values?
