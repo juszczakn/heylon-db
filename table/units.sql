@@ -1,8 +1,7 @@
---units.sql
 create table if not exists unit_group (
        groupId serial primary key,
-       parcelId integer references parcel(parcelId),
-       villageId integer references village(villageId)
+       parcelId integer,
+       villageId integer
 );
 
 create table unit_types (
@@ -13,10 +12,8 @@ create table unit_types (
 
 create table if not exists unit (
        unitId serial primary key,
-       groupId integer references unit_group(groupId),
+       groupId integer,
        amount integer,
-       unitType integer references unit_types(typeId)
+       unitTypeId integer
        -- more data?
 );
-
-insert into unit_types (typeid,typename) values (1,'fighter');
